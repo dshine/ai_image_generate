@@ -48,12 +48,6 @@ style_imgfiles = []
 for file in glob.glob("style/*.jpg"):
     style_imgfiles.append(file)
 
-print(original_imgfiles)
-print(style_imgfiles)
-
-# original_image = load_image("house.jpg")
-# style_image = load_image("field.jpg")
-
 for oi in original_imgfiles:
     for si in style_imgfiles:
         original_image = load_image(oi)
