@@ -10,7 +10,7 @@ import glob
 import time
 
 
-def load_image(image_path, image_size=(512, 256)):
+def load_image(image_path, image_size=(1024, 512)):
     img = tf.io.decode_image(
       tf.io.read_file(image_path),
       channels=3, dtype=tf.float32)[tf.newaxis, ...]
